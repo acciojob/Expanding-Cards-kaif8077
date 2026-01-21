@@ -33,9 +33,16 @@ body {
   flex: 5;
 }
 
-.img-text {
+/* KEY POINT: element exists, but is hidden */
+.panel .img-text {
   position: absolute;
   bottom: 20px;
   left: 20px;
   color: white;
+  visibility: hidden;
+}
+
+/* Only active panel shows text */
+.panel.active .img-text {
+  visibility: visible;
 }
